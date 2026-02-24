@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Указываем версию XML и кодировку -->
+
+<resources>
+    <!-- Контейнер для всех строковых ресурсов -->
+
+    <!-- Название приложения (отображается под иконкой и в системе) -->
+    <string name="app_name">RatingImages</string>
+
+    <!-- Подсказка в поле ввода (EditText) -->
+    <string name="hint_query">Enter your text here</string>
+
+    <!-- Текст кнопки запуска действия -->
+    <string name="btn_go">Go!</string>
+
+    <!-- Надпись перед ссылкой источника -->
+    <string name="label_source">Source:</string>
+
+    <!-- Текст кнопки открытия сайта -->
+    <string name="btn_open">Open</string>
+
+    <!-- Текст кнопки оценки "Like" -->
+    <string name="btn_like">Like</string>
+
+    <!-- Текст кнопки оценки "Dislike" -->
+    <string name="btn_dislike">Dislike</string>
+
+    <!-- URL по умолчанию, который отображается в TextView -->
+    <string name="default_url">https://example.com</string>
+
+    <!-- Описание изображения (для accessibility, screen reader) -->
+    <string name="image_desc">Main image</string>
+
+    <!-- Текст Toast, если пользователь ничего не ввёл -->
+    <string name="toast_enter_query">Введите запрос</string>
+
+    </resources>

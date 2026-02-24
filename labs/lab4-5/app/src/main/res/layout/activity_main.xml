@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Корневой контейнер экрана -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Поле для ввода текста -->
+    <EditText
+        android:id="@+id/etQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:hint="@string/hint_query"
+        android:inputType="text" />
+       <!--  android:autofillHints="none" -->
+
+
+    <!-- Кнопка запуска действия -->
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuery"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_go" />
+
+    <!-- Строка с источником изображения -->
+    <LinearLayout
+        android:id="@+id/sourceRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGo"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Надпись Source -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_source"
+            android:textStyle="bold" />
+
+        <!-- Адрес сайта -->
+        <TextView
+            android:id="@+id/tvSourceUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/default_url" />
+
+        <!-- Кнопка открытия сайта -->
+        <Button
+            android:id="@+id/btnOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_open" />
+    </LinearLayout>
+
+    <!-- Контейнер для изображения -->
+    <FrameLayout
+        android:id="@+id/frameImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/sourceRow"
+        android:layout_above="@id/bottomButtons"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <!-- Само изображение -->
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/puppy"
+            android:contentDescription="@string/image_desc" />
+    </FrameLayout>
+
+    <!-- Нижние кнопки оценки -->
+    <LinearLayout
+        android:id="@+id/bottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- Кнопка Like -->
+        <Button
+            android:id="@+id/btnLike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/btn_like" />
+
+        <!-- Кнопка Dislike -->
+        <Button
+            android:id="@+id/btnDislike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="@string/btn_dislike" />
+    </LinearLayout>
+
+</RelativeLayout>
