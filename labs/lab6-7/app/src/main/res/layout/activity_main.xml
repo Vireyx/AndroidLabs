@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Главный экран: кнопка диалога + список островов -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Кнопка: открыть диалог выбора фона -->
+    <Button
+        android:id="@+id/dialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_open_dialog"
+        android:background="#8E49FF"
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+
+    <!-- Список пунктов (Канары, Курилы, Мальдивы, Филиппины, Tabs...) -->
+    <ListView
+        android:id="@+id/islandsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

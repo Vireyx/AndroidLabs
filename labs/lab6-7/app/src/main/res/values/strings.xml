@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- XML, UTF-8 -->
+<resources> <!-- контейнер всех строк -->
+
+    <string name="app_name">Куда бы поехать в отпуск?</string> <!-- название приложения -->
+
+    <string name="enjoy">Enjoy yourself!</string> <!-- текст на экранах островов -->
+
+    <string name="can">Канары</string> <!-- подпись острова -->
+    <string name="cur">Курилы</string> <!-- подпись острова -->
+    <string name="mal">Мальдивы</string> <!-- подпись острова -->
+    <string name="phil">Филиппины</string> <!-- подпись острова -->
+
+    <string name="btn_open_dialog">Открыть диалог</string> <!-- текст кнопки диалога -->
+    <string name="bg">Выбрать фон</string> <!-- текст кнопки выбора фона -->
+    <string name="message">Хотите поменять фон?</string> <!-- заголовок диалога -->
+
+    <string name="red">Красный</string> <!-- пункт диалога -->
+    <string name="yellow">Жёлтый</string> <!-- пункт диалога -->
+    <string name="green">Зелёный</string> <!-- пункт диалога -->
+
+    <string name="tabs_item">Tabs / Слайдинг-вкладки</string> <!-- пункт списка для Tabs -->
+
+    <string name="tab_feed">Лента</string> <!-- вкладка 1 -->
+    <string name="tab_photo">Фото</string> <!-- вкладка 2 -->
+    <string name="tab_map">Карта</string> <!-- вкладка 3 -->
+
+</resources>

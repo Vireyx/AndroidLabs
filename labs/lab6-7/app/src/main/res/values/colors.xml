@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- XML -->
+<resources> <!-- контейнер цветов -->
+
+    <color name="redColor">#FFFF0000</color> <!-- красный ARGB -->
+    <color name="yellowColor">#FFFFFF00</color> <!-- жёлтый ARGB -->
+    <color name="greenColor">#FF00FF00</color> <!-- зелёный ARGB -->
+
+</resources>

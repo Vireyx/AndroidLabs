@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lab6_7">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lab6_7">
+
+        <!-- Главный экран (список + кнопка диалога) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Экраны островов -->
+        <activity
+            android:name=".CanariActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CuriliActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MaldiviActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PhilippiniActivity"
+            android:exported="false" />
+
+        <!-- Экран с диалогом смены фона -->
+        <activity
+            android:name=".DialogActivity"
+            android:exported="false" />
+
+        <!-- Tabs / Swipe экран -->
+        <activity
+            android:name=".TabsActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
